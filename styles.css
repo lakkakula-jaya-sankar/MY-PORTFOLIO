@@ -1,0 +1,245 @@
+:root{
+    --color-primary: black;
+    --color-secondary: #221D1D;
+    --color-thirshary:#969696;
+    --color-headings: azure;
+    --color-text:#606060;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: var(--color-primary);
+    font-family:  Sansation, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Kumbh Sans';
+    color: var(--color-headings);
+}
+::selection{
+    color: limegreen;
+}
+.sub-heading{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.text-blue{
+    color: greenyellow;
+}
+
+/* Nav Bar*/
+nav{
+    position: sticky;
+    top: 20px;
+}
+.nav-capsule{
+    width: 60%;
+    margin: 3% auto 2% auto;
+    padding: 0.2%;
+    border-radius: 50px;
+    background-color: var(--color-secondary);
+    color: var(--color-headings);
+    box-shadow: 0px 0px 50px 0px rgb(105, 105, 105);
+}
+.capsule-list{
+    list-style: none;
+    padding: 0%;
+}
+.capsule-list li{
+    display: inline-block;
+}
+.capsule-inner-conatiner{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+.badge-custom{
+    background-color: var(--color-thirshary);
+    padding: 5px 30px;
+    border-radius: 50px;
+    box-sizing: content-box;
+    color:var(--color-primary);
+}
+.capsule-list a{
+    text-decoration: none;
+    color:var(--color-headings);
+}
+.capsule-outer-conatainer{
+    display: none;
+}
+#capsule-outer-fullcontainer{
+    display: none;
+    margin-top: 20px;
+}
+#capsule-outer-fullcontainer li{
+    display: block;
+    text-align: right;
+    padding:7px;
+    margin-right:35px;
+}
+
+.nav-list-toggle{
+    display:block !important;
+}
+
+/* Beg of Body */
+.box{
+    display: flex;
+    flex-direction: row;
+    padding: 5% 7%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.right-box img{
+    width: 90%;
+    border-radius: 20px;
+    margin-left:30px;
+}
+.left-box{
+    width: 100%;
+    padding-right:30px;
+}
+.left-box p{
+    color: var(--color-text);
+}
+.left-box-introtext{
+    color: var(--color-text);
+}
+
+/* Beg of About */
+.about{
+    margin-top:7%;
+}
+.about div{
+    width: 70%;
+    margin: 7% auto;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: var(--color-secondary);
+}
+.about p{
+    text-indent: 25%;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Beg of Skills */
+.skills{
+    margin-top:10%;
+}
+.skills-table{
+    width: 75%;
+    margin: 5% auto;
+}
+.table-frame{
+    width: 100%;
+    text-align: center;
+    border-spacing: 5px;
+}
+.table-heading{
+    background-color: var(--color-thirshary);
+    color: var(--color-primary);
+}
+.table-data{
+    background-color: var(--color-secondary);
+}
+th, td{
+    padding: 10px;
+}
+
+/*Projects*/
+.projects-layout{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 3fr 3fr;
+    padding: 5% 10%;
+}
+.project-card{
+    background-color: var(--color-secondary);
+    margin: 0px 30px;
+    border-radius: 20px;
+    padding:10px;
+    text-align: justify;
+}
+.project-card p{
+    color: var(--color-text);
+}
+.padd{
+    margin-top: 12%;
+}
+
+/*Beg of Footer*/
+.footer-conatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+}
+.footer-heading{
+    font-size: 2rem;
+}
+.footer-right ul{
+    list-style: none;
+    padding: 0%;
+}
+.footer-right a{
+    text-decoration: none;
+    color:  var(--color-headings);
+}
+footer h4{
+    text-align: center;
+    font-weight: 200;
+    font-size: 0.7rem;
+}
+@media(min-width:300px) and (max-width:768px){
+    .capsule-inner-conatiner a{
+        display: none;
+    }
+    .capsule-inner-conatiner .badge-custom{
+        display: none;
+    }
+    .capsule-outer-conatainer{
+        display: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-capsule{
+        margin: 10% auto;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        padding: 5% 7%;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-box{
+        width: 100%;
+        padding-right:0;
+        text-align: center;
+    }
+    .right-box img{
+        text-align: center;
+    }
+}
+@media(min-width:300px) and (max-width:950px){
+    .projects-layout{
+        display: grid;
+        grid-template-rows: 3fr;
+        grid-template-columns: 1fr;
+        padding: 5% 10%;
+    }
+    .project-card{
+        margin:20px;
+    }
+}
+@media(min-width:769px){
+    #capsule-outer-fullcontainer{
+        display: none;
+    }
+    #capsule-outer-fullcontainer li{
+        display: none;
+    }
+}
