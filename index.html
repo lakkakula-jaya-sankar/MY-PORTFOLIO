@@ -13,9 +13,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./styles.css">
         <title>Jaya Sankar</title>
         <script>
+
             window.addEventListener("DOMContentLoaded", () => {
             let lastScrollTop = 0;
             const navbar = document.getElementsByTagName("nav")[0];
@@ -69,12 +71,12 @@
         <!--Beginning of main-->
         <header>
             <div class="box">
-                <div class="left-box">
+                <div class="left-box" data-aos="fade-right" data-aos-duration="1500">
                     <span class="badge-custom">Hello!</span>
                     <h1><span class="left-box-introtext">I'm &nbsp;</span> Jaya Sankar,</h1>
                     <p>A result-oriented Full Stack Developer building and managing dynamic websites and web applications, ensuring seamless functionality across frontend and backend to drive the success of the overall product.</p>
                 </div>
-                <div class="right-box">
+                <div class="right-box" data-aos="fade-left" data-aos-duration="1500">
                     <img src="./assets/Final.jpg" alt="Jaya sankar image">
                 </div>
             </div>
@@ -85,7 +87,7 @@
         <main>
             <div class="about">
                 <h2 class="sub-heading">ABOUT</h2>
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <p>
                         Hi, my name is Lakkakula Jaya Sankar. I am a dedicated and detail-oriented learner who has completed my bachelor's degree in Computer Science at PBR Visvodaya Institute of Technology. I have a solid foundation in <span class="text-blue">web development</span>, <span class="text-blue">Java full-stack development</span>, and <span class="text-blue">Data Structures and Algorithms (DSA)</span>. I also have a strong foundation in developing responsive web pages and optimizing them for better visibility through <span class="text-blue">Search Engine Optimization (SEO)</span>.  I'm passionate about coding, troubleshooting challenges, and refining my work to perfection.
                     </p>
@@ -99,11 +101,12 @@
             </div>
         </main>
 
+
             <!--Beginning of Skills-->
             <section>
                 <div class="skills">
                     <h2 class="sub-heading">SKILLS</h2>
-                    <div class="skills-table">
+                    <div class="skills-table" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                         <table class="table-frame">
                             <tr class="table-heading">
                                 <th>Domain</th>
@@ -138,7 +141,7 @@
             <!-- Beginning of project -->
             <section>
                 <h2 class="sub-heading padd">PROJECTS</h2>
-                <div class="projects-layout">
+                <div class="projects-layout" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <div class="project-card">
                         <h3>Online Book Store</h3>
                         <p>The Online Book Store is a web-based application that allows users to browse, search, and purchase books online. The project is built using Java Servlets, JSP, and MySQL, providing a dynamic and interactive user experience. The system facilitates book management, user authentication, order processing, and payment handling.</p>
@@ -159,10 +162,10 @@
                 <h2 class="sub-heading">CONTACT</h2>
                 <div class="footer-conatiner">
                     <div class="footer-left">
-                        <h3 class="footer-heading">Jaya Sankar</h3>
+                        <h3 class="footer-heading" data-aos="fade-right" data-aos-duration="1500">Jaya Sankar</h3>
                     </div>
                     <div class="footer-right">
-                        <ul>
+                        <ul data-aos="fade-left" data-aos-duration="1500">
                             <li><a href="https://in.linkedin.com/in/jayasankarlakkakula">LINKEDIN</a></li>
                             <li><a href="https://github.com/lakkakula-jaya-sankar">GITHUB</a></li>
                             <li><a href="mailto:lakkakulajayasankar@gmail.com">GMAIL</a></li>
@@ -172,5 +175,11 @@
                 </div>
                 <h4>&copy; Copyrigths Reserved 2025</h4>
             </footer>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
     </body>
 </html>
