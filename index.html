@@ -16,10 +16,26 @@
         <link rel="stylesheet" href="./styles.css">
         <title>Jaya Sankar</title>
         <script>
+            window.addEventListener("DOMContentLoaded", () => {
+            let lastScrollTop = 0;
+            const navbar = document.getElementsByTagName("nav")[0];
+
+            window.addEventListener("scroll", function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = "-110px";
+            } else {
+                navbar.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+            });
+            });
+
             function toogle(){
                 var m = document.getElementById("capsule-outer-fullcontainer");
                 m.classList.toggle("nav-list-toggle");
             }
+
         </script>
     </head>
     <body>
@@ -99,7 +115,7 @@
                             </tr>
                             <tr class="table-data">
                                 <td>Web Technologies</td>
-                                <td>HTML5, &nbsp; CSS3, &nbsp; ES6, &nbsp; Bootstrap5</td>
+                                <td>HTML5, &nbsp; CSS3, &nbsp; ES6, &nbsp; Bootstrap5,&nbsp; ReactJS,&nbsp; JQuery</td>
                             </tr>
                             <tr class="table-data">
                                 <td>Databases</td>
@@ -107,10 +123,10 @@
                             </tr>
                             <tr class="table-data">
                                 <td>Other</td>
-                                <td>Git&GitHub, &nbsp; Figma, &nbsp; AWS(Basics), &nbsp; ReactJS</td>
+                                <td>Git&GitHub, &nbsp; Figma, &nbsp; AWS(Basics),&nbsp; Hibernate</td>
                             </tr>
                             <tr class="table-data">
-                                <td>Learning Soon...</td>
+                                <td>In Progress...</td>
                                 <td>Spring Core, &nbsp; Spring Boot, &nbsp; Microservices, &nbsp; Webservices</td>
                             </tr>
                         </table>

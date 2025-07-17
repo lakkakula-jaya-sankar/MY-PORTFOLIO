@@ -27,18 +27,24 @@ body{
 
 /* Nav Bar*/
 nav{
-    position: sticky;
-    top: 20px;
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.3s ease-in-out;
+    background:linear-gradient(rgba(0, 0, 0, 1) 40%,rgba(0, 0, 0, 0.9) 50%,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0));
 }
-.nav-capsule{
+.nav-capsule {
     width: 60%;
-    margin: 3% auto 2% auto;
+    margin: 3% auto 0% auto;
     padding: 0.2%;
     border-radius: 50px;
-    background-color: var(--color-secondary);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--color-headings);
-    box-shadow: 0px 0px 50px 0px rgb(105, 105, 105);
 }
 .capsule-list{
     list-style: none;
@@ -84,9 +90,10 @@ nav{
 
 /* Beg of Body */
 .box{
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
-    padding: 5% 7%;
+    padding: 4% 7%;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -216,6 +223,7 @@ footer h4{
         margin: 10% auto;
     }
     .box{
+        margin-top: 30%;
         display: flex;
         flex-direction: column;
         padding: 5% 7%;
